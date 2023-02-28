@@ -1,3 +1,5 @@
+package com.kodeflap.pico
+
 object Configuration {
   const val compileSdk = 33
   const val targetSdk = 33

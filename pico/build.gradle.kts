@@ -1,3 +1,4 @@
+import com.kodeflap.pico.Configuration
 
 plugins {
   id(libs.plugins.android.library.get().pluginId)

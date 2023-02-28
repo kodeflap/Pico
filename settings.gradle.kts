@@ -1,5 +1,11 @@
 @file:Suppress("UnstableApiUsage")
 
+include(":benchmark")
+
+
+include(":app:benchmark")
+
+
 pluginManagement {
   repositories {
     gradlePluginPortal()
@@ -17,5 +23,4 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "Pico"
-include("app")
-include(":pico")
+include(":app",":pico",":benchmark")

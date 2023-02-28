@@ -1,4 +1,4 @@
-
+import com.kodeflap.pico.Configuration
 
 // Create variables with empty default values
 ext["ossrhUsername"] = ''
@@ -29,7 +29,8 @@ if (secretPropsFile.exists()) {
 if (snapshot) {
   ext["rootVersionName"] = Configuration.snapshotVersionName
 } else {
-  //ext["rootVersionName"] = Configuration.versionName
+  ext["rootVersionName"] = Configuration.versionName
+
 }
 
 // Set up Sonatype repository
