@@ -1,11 +1,5 @@
 @file:Suppress("UnstableApiUsage")
 
-include(":benchmark")
-
-
-include(":app:benchmark")
-
-
 pluginManagement {
   repositories {
     gradlePluginPortal()
