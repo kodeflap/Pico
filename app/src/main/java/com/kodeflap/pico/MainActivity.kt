@@ -43,7 +43,7 @@ class MainActivity : ComponentActivity() {
     @RequiresApi(Build.VERSION_CODES.S)
     override fun onUserLeaveHint() {
         super.onUserLeaveHint()
-        pipMode(icon = R.drawable.ic_launcher_foreground, this)?.let {
+        picoMode(icon = R.drawable.ic_launcher_foreground, this)?.let {
             enterPictureInPictureMode(it)
         }
     }

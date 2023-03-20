@@ -16,7 +16,7 @@ import com.kodeflap.pico.service.PicoReceiver
  * isPipSupported a variable uses to check RAM of the device. It checks whether it is pip supported version
  */
 @RequiresApi(Build.VERSION_CODES.S)
-public fun pipMode(icon: Int, context: Context): PictureInPictureParams? {
+public fun picoMode(icon: Int, context: Context): PictureInPictureParams? {
     return if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
         PictureInPictureParams.Builder()
             .setSourceRectHint(Rect())
